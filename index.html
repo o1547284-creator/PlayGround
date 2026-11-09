@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#080816" />
+  <title>Wrath of the Gods — Astral Calamity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="game-shell" aria-label="Wrath of the Gods game">
+    <canvas id="game" aria-label="Game arena"></canvas>
+    <div class="topline"><div class="brand-mark"><span class="brand-icon">✦</span><span>ASTRAL<span class="brand-dim"> / CALAMITY</span></span></div><div class="sound-chip"><span class="live-dot"></span> <span id="status">AWAITING CHALLENGER</span></div></div>
+    <section class="intro" id="intro">
+      <div class="eyebrow"><span></span> A CELESTIAL BOSS RUSH <span></span></div>
+      <h1>WRATH OF<br><i>THE GODS</i></h1>
+      <p class="intro-copy">The stars have gone silent. One last light stands<br class="desktop-only"> between this world and the void.</p>
+      <button class="primary-btn" id="start"><span>ENTER THE ARENA</span><b>↗</b></button>
+      <div class="controls-note"><span>MOVE</span> WASD / ARROWS <i>·</i> <span>DASH</span> SPACE <i>·</i> AUTO-FIRE</div>
+    </section>
+    <section class="result" id="result" hidden>
+      <div class="eyebrow" id="result-kicker">THE VOID RECEDES</div>
+      <h2 id="result-title">VICTORY</h2>
+      <p id="result-copy">The stars remember your name.</p>
+      <button class="primary-btn" id="again"><span>FIGHT AGAIN</span><b>↻</b></button>
+    </section>
+    <div class="mobile-hud" id="mobile-hud" aria-hidden="true">
+      <div class="stick-zone" id="stick-zone"><div class="stick-ring"><div class="stick-knob" id="stick-knob"></div></div><small>MOVE</small></div>
+      <div class="action-zone"><button class="touch-button dash-touch" id="dash-touch"><span>✦</span><small>DASH</small></button><button class="touch-button nova-touch" id="nova-touch"><span>☼</span><small>NOVA</small></button></div>
+    </div>
+    <div class="bottom-tip" id="bottom-tip">DODGE THE SIGILS · STRIKE WHEN THE EYE OPENS</div>
+    <div class="flash" id="flash"></div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
